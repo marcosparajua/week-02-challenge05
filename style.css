@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Raverist', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  width: 100vw;
+  color: rgb(219, 233, 245);
+  padding: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*ZcrXnEUgwSJnW_U1J_qm6A.jpeg');
+}
+
+.header__image {
+  width: 300px;
+  max-height: 100px;
+}
+
+.grid {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid__cell {
+  flex-basis: 5%;
+  max-width: 5%;
+  padding-bottom: 5%;
+
+  background-color: white;
+}
