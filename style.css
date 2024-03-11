@@ -19,10 +19,20 @@ body {
   justify-content: flex-start;
   background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*ZcrXnEUgwSJnW_U1J_qm6A.jpeg');
 }
+.header__div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
 .header__image {
   width: 300px;
   max-height: 100px;
+}
+.header__button {
+  &:hover {
+    background-color: rgb(236, 127, 154);
+  }
 }
 
 .grid {
