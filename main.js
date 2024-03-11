@@ -94,3 +94,6 @@ const startGame = () => {
 };
 
 startGame();
+document.querySelector('.header__button').addEventListener('click', () => {
+  location.reload();
+});
