@@ -44,7 +44,7 @@ const updateGrid = (grid) => {
   return newGrid;
 };
 
-function countNeighbors(grid, row, column) {
+const countNeighbors = (grid, row, column) => {
   let count = 0;
   for (let i = -1; i <= 1; i++) {
     for (let j = -1; j <= 1; j++) {
@@ -64,9 +64,9 @@ function countNeighbors(grid, row, column) {
     }
   }
   return count;
-}
+};
 
-function renderGrid(grid) {
+const renderGrid = (grid) => {
   const gridContainer = document.querySelector('.grid');
   gridContainer.innerHTML = '';
   for (let i = 0; i < rows; i++) {
@@ -81,9 +81,9 @@ function renderGrid(grid) {
       gridContainer.appendChild(cell);
     }
   }
-}
+};
 
-function startGame() {
+const startGame = () => {
   let grid = initializeGrid();
   renderGrid(grid);
 
@@ -91,6 +91,6 @@ function startGame() {
     grid = updateGrid(grid);
     renderGrid(grid);
   }, 1000);
-}
+};
 
 startGame();
